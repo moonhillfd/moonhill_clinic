@@ -66,7 +66,7 @@ switch($folder){
                         <li>
                           <a href="/?folder=moon&page=moon01">달맞이 한의원</a>
                           <div class="sub-menu" <?=$print_depth1_displays[0]?>>
-                            <a href="/?folder=moon&page=moon01" class="point">달맞이한의원의 특별함</a>
+                            <a href="/?folder=moon&page=moon01">달맞이한의원 소개</a>
                             <a href="/?folder=moon&page=moon02">원장 소개</a>
                             <a href="/?folder=moon&page=moon03">약재 관리</a>
                             <a href="/?folder=moon&page=moon04">진료 안내</a>
@@ -77,7 +77,7 @@ switch($folder){
                         <li>
                             <a href="/?folder=atopy&page=atopy01">아토피&middot;건선 치료</a>
                             <div class="sub-menu" <?=$print_depth1_displays[1]?>>
-                                <a href="/?folder=atopy&page=atopy01">아토피건선치료</a>
+                                <a href="/?folder=atopy&page=atopy01">아토피&middot;건선 치료</a>
                             </div>
                         </li>
                         <li>
@@ -89,11 +89,11 @@ switch($folder){
                             </div>
                         </li>
                         <li>
-                            <a href="/?folder=cancer&page=cancer01">암클리닉</a>
+                            <a href="/?folder=cancer&page=cancer01">암치료</a>
                             <div class="sub-menu" <?=$print_depth1_displays[3]?>>
                                 <a href="/?folder=cancer&page=cancer01">암의 이해</a>
-                                <a href="/?folder=cancer&page=cancer02">달맞이 암 특화치료</a>
-                                <a href="/?folder=cancer&page=cancer03">달맞이 항암설계치료</a>
+                                <a href="/?folder=cancer&page=cancer02">달맞이 암특화 치료</a>
+                                <a href="/?folder=cancer&page=cancer03">달맞이 항암설계 치료</a>
                             </div>
                         </li>
                         <li>
@@ -114,7 +114,7 @@ switch($folder){
                             <div class="sub-menu" <?=$print_depth1_displays[6]?>>
                                 <a href="/?folder=medicine&page=medicine01">공진단</a>
                                 <a href="/?folder=medicine&page=medicine02">생정대력환</a>
-                                <a href="/?folder=medicine&page=medicine03">운부환</a>
+                                <a href="/?folder=medicine&page=medicine03">윤부환</a>
                                 <a href="/?folder=medicine&page=medicine04">온백원</a>
                                 <a href="/?folder=medicine&page=medicine05">자궁단</a>
                                 <a href="/?folder=medicine&page=medicine06">복명환</a>

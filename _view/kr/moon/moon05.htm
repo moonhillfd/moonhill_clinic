@@ -1,0 +1,77 @@
+<div id="content">
+    <div class="visual bg1-1">
+        <p class="tit">달맞이한의원<em></em>시설 둘러보기</p>
+        <p class="txt">환자를 진심으로 이해하고 고통을 함께해 나가는, 달맞이한의원입니다.</p>
+    </div>
+    <div class="top">
+        <div class="navi">
+            <a href="#"><img src="/_public/images/sub/icon_home.png" alt=""></a>
+            <a href="#">달맞이한의원</a>
+            <a href="#" class="bold">시설 둘러보기</a>
+        </div>
+        <strong class="p-tit">시설 둘러보기</strong>
+    </div>
+    <div class="moon">
+        <div class="outline-box moon5">
+            <div class="content-box">
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/_public/images/sub/moon05_1.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_4.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_5.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_6.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_7.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_8.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_9.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_10.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_11.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_12.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/_public/images/sub/moon05_1_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_2_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_3_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_4_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_5_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_6_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_7_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_8_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_9_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_10_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_11_thum.png" alt=""></div>
+						<div class="swiper-slide"><img src="/_public/images/sub/moon05_12_thum.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-controls">
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-block"></div>
+                </div>
+                <script>
+                    var galleryThumbs = new Swiper('.gallery-thumbs', {
+                        spaceBetween: 20,
+                        slidesPerView: 4,
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                    });
+                    var galleryTop = new Swiper('.gallery-top', {
+                        spaceBetween: 10,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                        thumbs: {
+                            swiper: galleryThumbs
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
