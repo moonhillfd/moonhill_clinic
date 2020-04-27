@@ -59,7 +59,7 @@
     <div id="quick-menu">
         <a href="/?folder=bbs&page=list&board_id=counsel">온라인상담</a>
         <a href="?folder=community&page=community04">진료예약</a>
-        <a href="https://pf.kakao.com/_hiByl/42700638" target="_blank">카카오상담</a>
+        <a href="https://pf.kakao.com/_hiByl" target="_blank">카카오상담</a>
         <a href="http://blog.naver.com/PostList.nhn?blogId=antitumor454&skinType=&skinId=&from=menu&userSelectMenu=true" target="_blank">네이버블로그</a>
         <a href="/?folder=moon&page=moon06">오시는길</a>
         <a href="#" class="top-scroll">TOP</a>

@@ -110,7 +110,7 @@ switch($folder){
                             </div>
                         </li>
                         <li>
-                            <a href="/?folder=medicine&page=medicine01">달맞이환약</a>
+                            <a href="/?folder=medicine&page=medicine01">환약 소개</a>
                             <div class="sub-menu" <?=$print_depth1_displays[6]?>>
                                 <a href="/?folder=medicine&page=medicine01">공진단</a>
                                 <a href="/?folder=medicine&page=medicine02">생정대력환</a>
