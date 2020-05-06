@@ -107,7 +107,7 @@ switch($folder){
                             <div class="sub-menu" <?=$print_depth1_displays[5]?>>
                                 <!--<a href="/?folder=etc&page=etc01">치매&middot;건망증</a>-->
 
-                                <a href="/?folder=etc&page=etc04">수족냉증</a>
+                                <a href="/?folder=etc&page=etc02">수족냉증</a>
                             </div>
                         </li>
                         <li>

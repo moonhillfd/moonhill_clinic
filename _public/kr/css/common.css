@@ -499,7 +499,7 @@ header:hover .header-bottom {
 #content .decode .decode1-2 .tit + .txt{margin-bottom:0.95rem;}
 #content .decode .decode2-1 .heading-tit{display:block;padding: 0 0 0.5rem;max-width:6.8rem;}
 #content .decode .decode2-1 .txt{margin-bottom:0.5rem;}
-#content .decode .decode2-1 .img-box{background:#3a3a3a;font-size:0;text-align:center;}
+#content .decode .decode2-1 .img-box{background:#101010;font-size:0;text-align:center;}
 #content .decode .decode2-1 .img-box img{display:inline-block;max-width:100%;}
 #content .decode .decode2-1 .hash{margin-top:0.3rem;color:#333;font-size:0.17rem;text-align:center;font-weight:400;}
 #content .decode .decode3-1 .txt{max-width:70%;}
@@ -585,12 +585,30 @@ header:hover .header-bottom {
 #content .headache .scrollTop04{background:#fff;}
 
 /* etc */
-#content .etc.etc1 .outline-box{background:#fff;}
+
 #content .etc.etc1 .outline-box:nth-child(odd){background:#f9f9f9;}
-#content .etc.etc2 .outline-box{background:#fff;}
-#content .etc.etc2 .outline-box:nth-child(odd){background:#f9f9f9;}
+#content .etc.etc1 .outline-box.diagnosis { background: url("../../images/sub/diagnosis_bg.jpg") no-repeat center; background-size: cover; }
+#content .etc.etc1 .scrollTop01 .content-box { padding-top: 70px; }
+#content .etc.etc1 .content-box h1 { margin-top: 0.5rem; color: #969696;}
+#content .etc.etc2 .outline-box{background:#f9f9f9;}
 #content .etc.etc3 .outline-box{background:url(/_public/images/sub/etc_bg01.png) 50% 0 no-repeat;background-size:cover;}
-#content .etc.etc4 .outline-box{background:#f9f9f9;}
+#content .etc.etc4 .outline-box{background:#fff;}
+#content .etc.etc4 .outline-box:nth-child(odd){background:#f9f9f9;}
+#content .etc.etc5 .outline-box{background:#fff;}
+#content .etc.etc5 .outline-box:nth-child(odd){background:#f9f9f9;}
+#content .etc .content-box .con-img { display: flex; }
+#content .etc .content-box .con-img .box { flex: 1; display: inline-block; width: 100%; }
+#content .etc .content-box .con-img .box-img { max-width: 3rem; margin-right: 0.6rem; }
+#content .etc .content-box .con-img p { line-height: 1.5; font-size: 0.18rem; font-weight: 400; color: #555555; }
+#content .etc .content-box .con-img p.txt_title {  font-size: 0.3rem; font-weight: 500; color: #ff6600; margin-bottom: 0.2rem; }
+#content .etc .content-box ul.con-img { margin-top: 0.3rem; padding: 0.5rem 0.3rem; border: 1px solid #e6e6e6; border-radius: 0.2rem; }
+#content .etc .content-box .con-img li { flex: 1; text-align: center; }
+#content .etc .content-box .con-img li figure { margin: 0 0 0.2rem; }
+#content .etc .content-box .con-img li + li { margin-left: 0.2rem; }
+#content .etc .outline-box.diagnosis .content-box .con-tit { color: #fff; }
+#content .etc .content-box dl dt { position: relative; line-height: 1.3; font-size: 0.3rem; font-weight: 500; color: #fff; margin: 0.7rem 0 0.3rem; padding-left: 0.3rem; background: url("../../images/sub/icon_con8.png") no-repeat center left;}
+#content .etc .content-box dl dd { position: relative; line-height: 1.7; font-size: 0.18rem; font-weight: 400; color: #fff; padding-left: 0.4rem; }
+#content .etc .content-box dl dd:after { position: absolute; top: 50%; transform: translateY(-50%); left: 0.2rem; display: block; content: "ㆍ"; clear: both; }
 #content .etc .content-box .txt{position:relative;color:#555;font-size:0.18rem;font-weight:400;}
 #content .etc .content-box .txt strong{display:block;margin-bottom:0.2rem;font-size:0.22rem;color:#ff6600;font-weight:400;}
 #content .etc .content-box .tit{position:relative;margin-bottom:0.2rem;padding-left:0.3rem;color:#333;font-size:0.24rem;font-weight:400;}
@@ -599,7 +617,7 @@ header:hover .header-bottom {
 #content .etc .content-box .tit.no-icon:before{display:none;}
 #content .etc .content-box .txt + .tit{margin-top:0.4rem;}
 #content .etc .content-box .txt.bg{margin-bottom:0.5rem;padding:0 4.3rem 0.5rem 0;border-bottom:0.03rem solid #ededed;word-break:keep-all;}
-#content .etc .content-box .txt.bg:before{content:"";display:inline-block;position:absolute;right:0.55rem;bottom:0;width:3.72rem;height:2.24rem;background:url(/_public/images/sub/etc_img02.png) 50% 0 no-repeat;}
+#content .etc .content-box .txt.bg:before{content: ""; display: inline-block;position:absolute;right:0.55rem;bottom:0;width:3.72rem;height:2.24rem;background:url(/_public/images/sub/etc_img02.png) 50% 0 no-repeat;}
 #content .etc.etc3 .content-box .txt{max-width:8rem;word-break:keep-all;}
 #content .etc .txt-box{display:flex;display: -ms-flexbox;}
 #content .etc .txt-box .box{display:inline-block;width:100%;flex:1;}
@@ -612,7 +630,7 @@ header:hover .header-bottom {
 #content .etc .ul-type2{margin-bottom:0.4rem;overflow:hidden;}
 #content .etc .ul-type2 li{position:relative;float:left;margin-right:2%;padding:0.15rem 0.1rem 0.15rem 0.2rem;width:48%;color:#555;font-size:0.18rem;font-weight:400;border-bottom:0.01rem solid #ddd;box-sizing:border-box;}
 #content .etc .ul-type2 li:last-child{border-bottom:0;}
-#content .etc .ul-type2 li:before{content:"";display:inline-block;position:absolute;top:0.27rem;left:0.1rem;width:0.03rem;height:0.03rem;background:#555;border-radius:100%;}
+#content .etc .ul-type2 li:before{content:""; display:inline-block; position:absolute; top:0.27rem;left:0.1rem;width:0.03rem;height:0.03rem;background:#555;border-radius:100%;}
 #content .etc .img{margin:0.4rem 0 0.5rem;text-align:center;}
 #content .etc .img img{max-width:100%;}
 
