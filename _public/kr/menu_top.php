@@ -105,8 +105,7 @@ switch($folder){
                         <li>
                             <a href="/?folder=etc&page=etc01">기타치료</a>
                             <div class="sub-menu" <?=$print_depth1_displays[5]?>>
-                                <!--<a href="/?folder=etc&page=etc01">치매&middot;건망증</a>-->
-
+                                <a href="/?folder=etc&page=etc01">불면증</a>
                                 <a href="/?folder=etc&page=etc02">수족냉증</a>
                             </div>
                         </li>
