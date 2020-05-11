@@ -1753,7 +1753,13 @@ header:hover .header-bottom {
 }
 
 #content .moon .moon1-5 {
-	background: #f2f2f2;
+	text-align: right;
+	background: #f0eef0 url(/_public/images/sub/moon_bg07.png) center no-repeat;
+	background-size: cover;
+}
+#content .moon .moon1-5 .con-tit:before {
+	left: auto;
+	right: 0;
 }
 
 #content .moon .moon2-1 {
@@ -3602,6 +3608,7 @@ header:hover .header-bottom {
 
 #content .etc .content-box .con-img {
 	display: flex;
+	margin-bottom: 0.7rem;
 }
 
 #content .etc .content-box .con-img .box {
@@ -3720,6 +3727,10 @@ header:hover .header-bottom {
 	width: 0.21rem;
 	height: 0.26rem;
 	background: url(/_public/images/sub/icon_con5_1_03.png) no-repeat;
+	background-size: 100%;
+}
+#content .etc .content-box h3.tit:before {
+	background: url("../../images/sub/medicine.svg") no-repeat center;
 	background-size: 100%;
 }
 
@@ -4135,7 +4146,7 @@ header:hover .header-bottom {
 }
 
 #content .community .reservation .calendar {
-	margin-bottom: 0.4rem;
+	margin: 1rem 0 0.4rem;
 	padding: 0.4rem;
 	border: 0.01rem solid #d8d6d6;
 	background: #f5f5f5;
@@ -4285,7 +4296,7 @@ header:hover .header-bottom {
 
 #content .community .reservation .piw-form-group .info-txt {
 	margin-top: 0.05rem;
-	color: #555;
+	color: #ff6600;
 	font-size: 0.14rem;
 }
 
