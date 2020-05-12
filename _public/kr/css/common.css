@@ -3608,6 +3608,8 @@ header:hover .header-bottom {
 
 #content .etc .content-box .con-img {
 	display: flex;
+}
+#content .etc .scrollTop04 .content-box .con-img {
 	margin-bottom: 0.7rem;
 }
 
