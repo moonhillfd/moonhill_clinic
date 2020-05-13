@@ -5,11 +5,11 @@
 	require CFG_MODEL_PATH_ABS."/class.paging.php";
 	$cls_paging = new paging();
 	
-	$s_data["s_medical_sel"] = empty($_REQUEST["s_medical_sel"])?"":$_REQUEST["s_medical_sel"];	
-	$s_data["s_r_time"] = empty($_REQUEST["s_r_time"])?"":$_REQUEST["s_r_time"];	
-	$s_data["s_username"] = empty($_REQUEST["s_username"])?"":$_REQUEST["s_username"];	
-	$s_data["s_email"] = empty($_REQUEST["s_email"])?"":$_REQUEST["s_email"];
-	$s_data["s_hp"] = empty($_REQUEST["s_hp"])?"":$_REQUEST["s_hp"];
+	$s_medical_sel = empty($_REQUEST["s_medical_sel"])?"":$_REQUEST["s_medical_sel"];	
+	$s_r_time = empty($_REQUEST["s_r_time"])?"":$_REQUEST["s_r_time"];	
+	$s_username = empty($_REQUEST["s_username"])?"":$_REQUEST["s_username"];	
+	$s_email = empty($_REQUEST["s_email"])?"":$_REQUEST["s_email"];
+	$s_hp = empty($_REQUEST["s_hp"])?"":$_REQUEST["s_hp"];
 	$order_by_key = empty($_REQUEST["order_by_key"])?"add_date":$_REQUEST["order_by_key"];
 	$desc_key = empty($_REQUEST["desc_key"])?"desc":$_REQUEST["desc_key"];
 	$s_date = empty($_REQUEST["s_date"])?"":$_REQUEST["s_date"];
@@ -139,7 +139,7 @@
 <div id="admin_body" style="width:1200px;">
 	<!-- 네비 시작 -->
 	<div class="navigation">
-		<ul><img src="<?php echo CFG_PUBLIC_PATH; ?>/admin/image/ar_box01.gif" align="absmiddle"/> <span>관리자메인 &gt; 책 신청 관리</span></ul>
+		<ul><img src="<?php echo CFG_PUBLIC_PATH; ?>/admin/image/ar_box01.gif" align="absmiddle"/> <span>관리자메인 &gt; 예약 관리</span></ul>
 	</div>
 	<!-- 네비 끝 -->
 
@@ -153,7 +153,7 @@
 				</colgroup>
 				<tbody>
 				<tr>
-					<td><img src="<?php echo CFG_PUBLIC_PATH; ?>/admin/image/ar_box01.gif"> <span>책 신청 정보 검색/수정</span></td>
+					<td><img src="<?php echo CFG_PUBLIC_PATH; ?>/admin/image/ar_box01.gif"> <span>예약 정보 검색</span></td>
 					<td></td>
 				</tr>
 				</tbody>
@@ -299,17 +299,6 @@
 	{
 		for ($i=0; $i<count($row["idx"]); $i++)
 		{
-			switch($row['medical_sel'][$i]) {
-			case a:
-				$medical_sel = "감기";
-				break;
-			case b:
-				$medical_sel = "몸살";
-				break;
-			case c:
-				$medical_sel = "두통";
-				break;
-			}
 			if($row["r_time"][$i] > 12) 
 			{
 				$r_time = $row["r_time"][$i]-12;
@@ -332,7 +321,7 @@
 							</a>
 						</td>
 						<td style="text-align:center; padding-left:10px;">
-								<?php echo $medical_sel; ?>
+								<?php echo make_select_form("", array(""=>"전체", "a"=>"불면증", "b"=>"피부질환(아토피)", "c"=>"암치료", "d"=>"두통", "e"=>"수족냉증", "f"=>"해독", "g"=>"기타"), "disabled style='width:100%;'", $row['medical_sel'][$i])?>
 						</td>
 						<td style="text-align:center; line-height:15px;">
 							<?php echo $row["r_day"][$i];?>

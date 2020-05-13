@@ -36,13 +36,13 @@ $(document).ready(function() {
 		autoSize : false
 	});
 
-	$('tr').find('td:first').each(function(i, e){
-		$(this).addClass('fpink');
-	});
+	<? if($f_chk == "y"){?>
+		var offset = $(".calendar").offset();
+		$('html').animate({scrollTop : offset.top}, 400);
+	<?}?>
 
-	$('tr').find('td:last').each(function(i, e){
-		$(this).addClass('fblue2');
-	});
+	console.log(<?=$month?>);
+
 });
 
 
@@ -51,30 +51,6 @@ $(function(){
 	$(".onlynum").keyup(function(){$(this).val( $(this).val().replace(/[^0-9]/g,"") );} );
 });
 
-
-<!--
-function move_month(year, month)
-{
-	$.ajax({
-		type: "post",
-		url: "/",
-		data: "folder=<?php echo $folder; ?>&page=proc&url=ajax&mode=get_reserve_month&year=" + year + "&month=" + month,
-
-		success: function(data) {
-			var arr = data.split("|rnqnswk|");			
-			console.log(arr);
-//			return;
-
-			if (arr[0] == "ok")
-			{
-				$("#inspecCalenda").empty().html(arr[1]);
-			}
-			else
-				alert("날짜를 불러오는데 실패했습니다.");
-		},
-		error: function(msg) { alert("error"); }
-	});
-}
 
 function chk_day(y, m, d) {
 
@@ -95,7 +71,7 @@ function chk_day(y, m, d) {
 
 	if (in_array(d, arrNumber))
 	{
-		alert("일요일은 휴진일입니다.");
+		alert("일요일은 휴진일 입니다.");
 		return false;
 	}else{
 		if (m_size == 1)
@@ -233,11 +209,11 @@ function check_add_form() {
                         <li>예약 변경 및 취소는 예약일 하루 전까지 전화를 주시면 변경해 드리겠습니다.</li>
                         <li>문의 전화 : 051-746-7711</li>
                     </ul>
-                    <div class="calendar"  id="inspecCalenda">
+                    <div class="calendar">
                         <div class="top">
-                            <button type="button" class="prev" onclick="move_month('<?php echo $prevMonth[0]; ?>','<?php echo $prevMonth[1]; ?>'); return false;">&lt;&lt;</button>
+                            <button type="button" class="prev" onclick="Go('/?folder=<?php echo $folder; ?>&page=<?php echo $page; ?>&year=<?php echo $prevMonth[0]; ?>&month=<?php echo $prevMonth[1]; ?>&f_chk=y'); return false;">&lt;&lt;</button>
                             <span><?php echo $year; ?>.<?php echo $month; ?></span>
-							<button type="button" class="next" onclick="move_month('<?php echo $nextMonth[0]; ?>','<?php echo $nextMonth[1]; ?>'); return false;">&gt;&gt;</button>
+                            <button type="button" class="next" onclick="Go('/?folder=<?php echo $folder; ?>&page=<?php echo $page; ?>&year=<?php echo $nextMonth[0]; ?>&month=<?php echo $nextMonth[1]; ?>&f_chk=y'); return false;">&gt;&gt;</button>
                         </div>
                         <table border="0" cellspacing="0" cellpadding="0">
 							<colgroup>
@@ -251,13 +227,13 @@ function check_add_form() {
 						  </colgroup>
                             <thead>
                                 <tr>
-                                    <th>일요일</th>
+                                    <th class="fpink">일요일</th>
                                     <th>월요일</th>
                                     <th>화요일</th>
                                     <th>수요일</th>
                                     <th>목요일</th>
                                     <th>금요일</th>
-                                    <th>토요일</th>
+                                    <th class="fblue2">토요일</th>
                                 </tr>
                             </thead>
                             <tbody>
