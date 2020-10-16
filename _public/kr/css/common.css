@@ -3106,6 +3106,27 @@ header:hover .header-bottom {
 	margin-top: 0.35rem;
 }
 
+#content .cancer .content-box .txt dl {
+	padding: 30px 0;
+}
+#content .cancer .content-box .txt dl dd {
+	position: relative;
+	line-height: 28px;
+	font-size: 0.17rem;
+	padding-left: 25px;
+}
+#content .cancer .content-box .txt dl dd:before {
+	position: absolute;
+	left: 5px;
+	top: 0;
+	display: block;
+	line-height: 28px;
+	font-size: 0.1rem;
+	color: #ff6600;
+	content: "◆";
+	clear: both;;
+}
+
 #content .cancer .content-box .tit {
 	position: relative;
 	margin-bottom: 0.2rem;
@@ -3154,7 +3175,7 @@ header:hover .header-bottom {
 }
 
 #content .cancer .cancer1-1 .txt-box .box+.box {
-	margin-left: 1.1rem;
+	margin-left: 1rem;
 	max-width: 3.82rem;
 }
 
