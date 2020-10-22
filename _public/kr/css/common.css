@@ -3048,9 +3048,13 @@ header:hover .header-bottom {
 }
 
 /* cancer */
+#content .cancer .cancer0 {
+	background: url(/_public/images/sub/cancer_bg00.jpg) 50% 0 no-repeat;
+	background-size: cover;
+}
 #content .cancer .cancer1-1 {
 	padding-bottom: 1rem;
-	background: #faf6f0;
+	background: #fff;
 }
 
 #content .cancer .cancer1-2 {
@@ -3059,7 +3063,7 @@ header:hover .header-bottom {
 }
 
 #content .cancer .cancer1-3 {
-	background: #fff;
+	background: #faf6f0;
 }
 
 #content .cancer .cancer1-4 {
@@ -3168,6 +3172,9 @@ header:hover .header-bottom {
 	margin-right: 0.6rem;
 	max-width: 4.28rem;
 }
+#content .cancer .cancer0 .txt-box.left .box:first-child {
+	max-width: 4.5rem;
+}
 
 #content .cancer .txt-box.left .box+.box {
 	margin-left: 0;
@@ -3175,7 +3182,7 @@ header:hover .header-bottom {
 }
 
 #content .cancer .cancer1-1 .txt-box .box+.box {
-	margin-left: 1rem;
+	margin-left: 0.6rem;
 	max-width: 3.82rem;
 }
 
