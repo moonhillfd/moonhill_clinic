@@ -819,6 +819,11 @@ header:hover .header-bottom {
 	height: 6rem;
 }
 
+#main .main-swiper .swiper-container .swiper-slide.slide00 {
+	background: url(/_public/images/main/slide00.jpg) 50% 0 no-repeat;
+	background-size: cover;
+}
+
 #main .main-swiper .swiper-container .swiper-slide.slide01 {
 	background: url(/_public/images/main/slide01.jpg) 50% 0 no-repeat;
 	background-size: cover;
@@ -853,27 +858,36 @@ header:hover .header-bottom {
 }
 
 #main .main-swiper .swiper-container .swiper-slide .txt-box .tit {
-	margin-bottom: 0.27rem;
 	color: #333;
 	font-size: 0.5rem;
 	font-weight: 800;
 	font-family: 'Nanum Myeongjo';
 	line-height: 0.5rem;
+	margin-bottom: 0.27rem;
 }
 
 #main .main-swiper .swiper-container .swiper-slide .txt-box .tit em {
 	display: block;
-	margin-bottom: 0.27rem;
 	font-size: 0.18rem;
-	font-weight: 400;
+	font-weight: 300;
 	font-family: 'Noto Sans KR';
 	line-height: 0.18rem;
+	letter-spacing: 0;
+	color: #808080;
+	margin-bottom: 0.27rem;
+}
+
+#main .main-swiper .swiper-container .swiper-slide .txt-box h3 {
+	font-family: 'Nanum Myeongjo';
+	color: #483d35;
+	font-size: 1.0rem;
+	margin: 0.5rem 0;
 }
 
 #main .main-swiper .swiper-container .swiper-slide .txt-box .txt {
-	margin-bottom: 0.27rem;
 	color: #555;
 	font-size: 0.2rem;
+	margin-bottom: 0.27rem;
 }
 
 #main .main-swiper .swiper-container .swiper-slide .txt-box .btn-box .btn {
